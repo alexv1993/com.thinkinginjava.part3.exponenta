@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+<!--"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
+<!DOCTYPE hibernate-mapping SYSTEM
+        "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.github.alexv1993.part3.exponenta.model.Exponents" table="EXPONENTS">
+        <id name="ID" type="int">
+            <column name="ID"/>
+            <generator class="increment"/>
+        </id>
+        <property name="expFloat" type="float">
+            <column name="EXP_FLOAT"/>
+        </property>
+        <property name="expDouble" type="double">
+            <column name="EXP_DOUBLE"/>
+        </property>
+        <property name="expDouble2" type="double">
+            <column name="EXP_DOUBLE_2"/>
+        </property>
+    </class>
+</hibernate-mapping>

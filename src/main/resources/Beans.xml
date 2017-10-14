@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="exponents" class="com.github.alexv1993.part3.exponenta.model.Exponents" scope="prototype">
+        <property name="expFloat" value="1.39e5"/>
+        <property name="expDouble" value="47e47"/>
+        <property name="expDouble2" value="47347"/>
+    </bean>
+
+    <bean id="showInterface" class="com.github.alexv1993.part3.exponenta.model.ShowManager" scope="prototype"/>
+
+</beans>
